@@ -11,7 +11,7 @@ function App() {
     <Router>
       <Switch>
         <Route path="/components/:type/:subtype/:name">
-          <div>Hello again</div>
+          <div>Hello there</div>
         </Route>
         <Route path="/components/:type/:name">
           <div>Hello</div>
