@@ -28,7 +28,6 @@ export default () => {
 
     <AnimationRevealPage>
       <Header />
-      <a href="testing" >Test</a>
       <Hero
         heading={<>Hey there! I'm <HighlightedText>Kapeel Kokane</HighlightedText></>}
         description={<>I'm a <strong>full stack developer</strong> with five years of experience in the industry. In addition to working full-time as a senior dev, I also love to create videos, blog posts & #sketchnotes around programming.</>}
