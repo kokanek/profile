@@ -85,9 +85,9 @@ export default ({ roundedHeaderButton = true, logoLink, links, className, collap
   const collapseBreakpointCss = collapseBreakPointCssMap[collapseBreakpointClass];
 
   const defaultLogoLink = (
-    <LogoLink href="/">
+    <LogoLink href="https://bit.ly/CsSimpl">
       <img src={logo} alt="logo" />
-      Kapeel Kokane
+      ComScience Simplified
     </LogoLink>
   );
 

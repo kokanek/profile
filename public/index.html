@@ -28,6 +28,8 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <iframe id="receiver" src="https://asia.store2door.ecomuat.capillary.in" style="display:none">
+    </iframe>
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -39,5 +41,20 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      window.onload = function () {
+        // Get the window displayed in the iframe.
+        var receiver = document.getElementById('receiver').contentWindow;
+        receiver.postMessage({message: 'DETECT_STOREMAX_LOGIN', url: window.location.pathname}, 'https://asia.store2door.ecomuat.capillary.in');
+
+        function receiveMessage(e) {
+          console.log('Got reply for the message!', e);
+          if (e.data.status === 'LOGGED_IN') {
+            window.location = e.data.redirect;
+          }
+        }
+        window.addEventListener('message', receiveMessage);
+      }
+    </script>
   </body>
 </html>

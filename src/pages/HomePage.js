@@ -30,14 +30,34 @@ export default () => {
       <Header />
       <Hero
         heading={<>Hey there! I'm <HighlightedText>Kapeel Kokane</HighlightedText></>}
-        description={<>I'm a <strong>full stack developer</strong> with five years of experience in the industry. In addition to working full-time as a senior dev, I also love to create videos, blog posts & #sketchnotes around programming.</>}
+        description={<>A <strong>full stack developer</strong> with more than six years of experience in the industry. In addition to working full-time as a senior dev, I also love to create blog posts on <strong>dev.to</strong> & videos on my YouTube channel <strong>Comscience Simplified</strong>.</>}
         imageSrc={profile}
         imageCss={imageCss}
         imageDecoratorBlob={true}
-        primaryButtonText="Let's Connect!"
-        primaryButtonUrl="#"
         watchVideoButtonText="My Youtube Channel"
         watchVideoYoutubeUrl="https://www.youtube.com/embed/bPPHjJOyx1Y" // https://www.youtube.com/watch?v=bPPHjJOyx1Y
+      />
+      <MainFeature
+        subheading={<Subheading>Giving back to the community</Subheading>}
+        heading={
+          <>
+            Been a content creator for the
+            <wbr /> <HighlightedText>last 3 years.</HighlightedText>
+          </>
+        }
+        description={
+          <Description>
+            In addition to creating <strong>tech videos</strong>, I also create <strong>blog posts</strong> on dev.to as well as <strong>technical #sketchnotes</strong> on twitter.
+          </Description>
+        }
+        buttonRounded={false}
+        textOnLeft={false}
+        primaryButtonText="Let's connect"
+        primaryButtonUrl="https://www.linkedin.com/in/%F0%9F%91%A4kapeel-kokane-30b81973/"
+        imageSrc={codingImage}
+        imageCss={imageCss}
+        imageDecoratorBlob={true}
+        imageDecoratorBlobCss={tw`left-1/2 -translate-x-1/2 md:w-32 md:h-32 opacity-25`}
       />
       <Features
         heading={
@@ -48,54 +68,29 @@ export default () => {
         cards={[
           {
             imageSrc: chefIconImageSrc,
-            title: "2500+ Subscribers",
-            description: "YouTube Channel",
-            url: "https://timerse.com"
+            title: "3300+ Subscribers",
+            description: <strong>YouTube Channel</strong>,
+            url: "https://bit.ly/CsSimpl"
           },
           {
             imageSrc: shopIconImageSrc,
-            title: "3000+ Followers",
-            description: "Dev.io Blog",
-            url: "https://google.com"
+            title: "3200+ Followers",
+            description: <strong>Dev.to Blog</strong>,
+            url: "https://dev.to/comscience"
           },
           {
             imageSrc: celebrationIconImageSrc,
             title: "10+ Sketchnotes",
-            description: "Twitter Handle",
-            url: "https://reddit.com"
+            description: <strong>Twitter Handle</strong>,
+            url: "https://twitter.com/Kokaneka"
           }
         ]}
 
         imageContainerCss={tw`p-2!`}
         imageCss={tw`w-20! h-20!`}
       />
-      <MainFeature
-        subheading={<Subheading>Graduated in 2014</Subheading>}
-        heading={
-          <>
-            In the industry for
-            <wbr /> <HighlightedText>over 5 years.</HighlightedText>
-          </>
-        }
-        description={
-          <Description>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-            <br />
-            <br />
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </Description>
-        }
-        buttonRounded={false}
-        textOnLeft={false}
-        primaryButtonText="Let's connect"
-        imageSrc={codingImage}
-        imageCss={imageCss}
-        imageDecoratorBlob={true}
-        imageDecoratorBlobCss={tw`left-1/2 -translate-x-1/2 md:w-32 md:h-32 opacity-25`}
-      />
       {/* TabGrid Component also accepts a tabs prop to customize the tabs and its content directly. Please open the TabGrid component file to see the structure of the tabs props.*/}
-      <TabGrid
+      {/* <TabGrid
         heading={
           <>
             Checkout our <HighlightedText>menu.</HighlightedText>
@@ -137,7 +132,7 @@ export default () => {
       <DownloadApp
         text={<>People around you are ordering delicious meals using the <HighlightedTextInverse>Treact App.</HighlightedTextInverse></>}
       />
-      <Footer />
+      <Footer /> */}
     </AnimationRevealPage>
   );
 }
