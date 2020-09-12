@@ -73,9 +73,9 @@ export default ({ roundedHeaderButton = true, logoLink, links, className, collap
   const defaultLinks = [
     <NavLinks key={1}>
       <NavLink href="/#">Home</NavLink>
-      <NavLink href="/#">Videos</NavLink>
-      <NavLink href="/#">Blogs</NavLink>
-      <NavLink href="/#">Sketchnotes</NavLink>
+      <NavLink href="https://www.youtube.com/channel/UCowumzu6ojutpuj-wzqTIcA/videos" target="_blank">Videos</NavLink>
+      <NavLink href="https://dev.to/comscience" target="_blank">Blogs</NavLink>
+      <NavLink href="/sketchnotes">Sketchnotes</NavLink>
       <NavLink href="/#">Projects</NavLink>
       <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="/#">Mail me!</PrimaryLink>
     </NavLinks>

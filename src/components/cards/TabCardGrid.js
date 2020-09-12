@@ -28,7 +28,7 @@ const CardContainer = tw.div`mt-10 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 sm:pr-10 md
 const Card = tw(motion.a)`bg-gray-200 rounded-b block max-w-xs mx-auto sm:max-w-none sm:mx-0`;
 const CardImageContainer = styled.div`
   ${props => css`background-image: url("${props.imageSrc}");`}
-  ${tw`h-56 xl:h-64 bg-center bg-cover relative rounded-t`}
+  ${tw`h-64 xl:h-64 bg-cover relative rounded-t`}
 `;
 const CardRatingContainer = tw.div`leading-none absolute inline-flex bg-gray-100 bottom-0 left-0 ml-4 mb-4 rounded-full px-5 py-2 items-end`;
 const CardRating = styled.div`
@@ -46,7 +46,7 @@ const CardButton = tw(PrimaryButtonBase)`text-sm`;
 
 const CardReview = tw.div`font-medium text-xs text-gray-600`;
 
-const CardText = tw.div`p-4 text-gray-900`;
+const CardText = tw.div`p-4 text-primary-500`;
 const CardTitle = tw.h5`text-lg font-semibold group-hover:text-primary-500`;
 const CardContent = tw.p`mt-1 text-sm font-medium text-gray-600`;
 const CardPrice = tw.p`mt-4 text-xl font-bold`;
@@ -64,86 +64,111 @@ export default ({
     Starters: [
       {
         imageSrc:
-          "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-        title: "Veg Mixer",
-        content: "Tomato Salad & Carrot",
-        price: "$5.99",
-        rating: "5.0",
-        reviews: "87",
-        url: "#"
+          "https://pbs.twimg.com/media/EhtrvnuUwAANqlk?format=jpg&name=large",
+        title: "Prototypal Inheritance",
+        content: "object | prototypes",
+        url: "https://twitter.com/Kokaneka/status/1304755202663182336"
       },
       {
         imageSrc:
-          "https://images.unsplash.com/photo-1432139555190-58524dae6a55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-        title: "Macaroni",
-        content: "Cheese Pizza",
-        price: "$2.99",
-        rating: "4.8",
-        reviews: "32",
-        url: "#"
+          "https://pbs.twimg.com/media/EhZqFNkUYAEi5dh?format=jpg&name=large",
+        title: "'this' in JS",
+        content: "this | context",
+        url: "https://twitter.com/Kokaneka/status/1303345927625744387"
       },
       {
         imageSrc:
-          "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327??ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-        title: "Nelli",
-        content: "Hamburger & Fries",
-        price: "$7.99",
-        rating: "4.9",
-        reviews: "89",
-        url: "#"
+          "https://pbs.twimg.com/media/Ed7xglAUcAAbVd4?format=png&name=large",
+        title: "Closures in JS",
+        content: "scopes | closures",
+        url: "https://twitter.com/Kokaneka/status/1287732115967062018"
       },
       {
         imageSrc:
-          "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-        title: "Jalapeno Poppers",
-        content: "Crispy Soyabeans",
-        price: "$8.99",
-        rating: "4.6",
-        reviews: "12",
-        url: "#"
+          "https://pbs.twimg.com/media/Eczf99ZUcAAVSy-?format=png&name=large",
+        title: "Ternary Operator",
+        content: "conditional | operator",
+        url: "https://twitter.com/Kokaneka/status/1282646430780284928"
       },
       {
         imageSrc:
-          "https://images.unsplash.com/photo-1473093226795-af9932fe5856?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-        title: "Cajun Chicken",
-        content: "Roasted Chicken & Egg",
-        price: "$7.99",
-        rating: "4.2",
-        reviews: "19",
-        url: "#"
+          "https://pbs.twimg.com/media/EbbvunGUMAckLBD?format=jpg&name=large",
+        title: "Var v/s Let scope",
+        content: "scope | variable | definition",
+        url: "https://twitter.com/Kokaneka/status/1276471152517341184"
       },
       {
         imageSrc:
-          "https://images.unsplash.com/photo-1550461716-dbf266b2a8a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-        title: "Chillie Cake",
-        content: "Deepfried Chicken",
-        price: "$2.99",
-        rating: "5.0",
-        reviews: "61",
-        url: "#"
+          "https://pbs.twimg.com/media/Eaj7MoYU8AEvjYb?format=jpg&name=large",
+        title: "Weird stuff in JS",
+        content: "scope | reference",
+        url: "https://twitter.com/Kokaneka/status/1272543177816150018"
       },
       {
         imageSrc:
-          "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-        title: "Guacamole Mex",
-        content: "Mexican Chilli",
-        price: "$3.99",
-        rating: "4.2",
-        reviews: "95",
-        url: "#"
+          "https://pbs.twimg.com/media/EZ_VqvSU0AE5dKI?format=jpg&name=large",
+        title: "Hoisting in JS",
+        content: "var | let",
+        url: "https://twitter.com/Kokaneka/status/1269968569539805185"
       },
       {
         imageSrc:
-          "https://images.unsplash.com/photo-1565310022184-f23a884f29da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-        title: "Carnet Nachos",
-        content: "Chilli Crispy Nachos",
-        price: "$3.99",
-        rating: "3.9",
-        reviews: "26",
-        url: "#"
-      }
+          "https://pbs.twimg.com/media/EZMRys2U4AMExBh?format=jpg&name=large",
+        title: "Arrays in JS",
+        content: "array | objects",
+        url: "https://twitter.com/Kokaneka/status/1266375664212389895"
+      },
+      {
+        imageSrc:
+          "https://pbs.twimg.com/media/EY8PJkaU8AAazhn?format=jpg&name=large",
+        title: "Objects in JS",
+        content: "array | objects",
+        url: "https://twitter.com/Kokaneka/status/1265246695081668608"
+      },
+      {
+        imageSrc:
+          "https://pbs.twimg.com/media/EYs7zQTUwAA_3IL?format=jpg&name=large",
+        title: "Coercion in JS",
+        content: "coercion | array | string",
+        url: "https://twitter.com/Kokaneka/status/1264169952786841601"
+      }, 
+      {
+        imageSrc:
+          "https://pbs.twimg.com/media/EYd9bQLUYAQG5jC?format=jpg&name=large",
+        title: "Strict v/s Loose comparison",
+        content: "== | === | compare",
+        url: "https://twitter.com/Kokaneka/status/1263116761534050305"
+      },
+      {
+        imageSrc:
+          "https://pbs.twimg.com/media/EYEN1sMU8AEEmZ3?format=jpg&name=large",
+        title: "Truthy v/s Falsy values",
+        content: "true | false | compare",
+        url: "https://twitter.com/Kokaneka/status/1261304689888387074"
+      },
+      {
+        imageSrc:
+          "https://pbs.twimg.com/media/EX5zU5AWkAAlq0F?format=jpg&name=large",
+        title: "Algorithm sketchnotes",
+        content: "number ocurring once in array",
+        url: "https://twitter.com/Kokaneka/status/1260572109476159489"
+      },
+      {
+        imageSrc:
+          "https://pbs.twimg.com/media/EX5zU5AWkAAlq0F?format=jpg&name=large",
+        title: "Coercion in JS",
+        content: "implicit vs explicit coercion",
+        url: "https://twitter.com/Kokaneka/status/1259497576149090311"
+      },
+      {
+        imageSrc:
+          "https://pbs.twimg.com/media/EX5zU5AWkAAlq0F?format=jpg&name=large",
+        title: "Scopes & Closures",
+        content: "scopes | closures | basics",
+        url: "https://twitter.com/Kokaneka/status/1258732115304214540"
+      },
     ],
-    Main: getRandomCards(),
+    Main: getRandomCards(), // https://pbs.twimg.com/media/EXfp7RiVcAco0n2?format=jpg&name=large
     Soup: getRandomCards(),
     Desserts: getRandomCards()
   }
@@ -161,13 +186,6 @@ export default ({
       <ContentWithPaddingXl>
         <HeaderRow>
           <Header>{heading}</Header>
-          <TabsControl>
-            {Object.keys(tabs).map((tabName, index) => (
-              <TabControl key={index} active={activeTab === tabName} onClick={() => setActiveTab(tabName)}>
-                {tabName}
-              </TabControl>
-            ))}
-          </TabsControl>
         </HeaderRow>
 
         {tabsKeys.map((tabKey, index) => (
@@ -193,13 +211,6 @@ export default ({
               <CardContainer key={index}>
                 <Card className="group" href={card.url} initial="rest" whileHover="hover" animate="rest">
                   <CardImageContainer imageSrc={card.imageSrc}>
-                    <CardRatingContainer>
-                      <CardRating>
-                        <StarIcon />
-                        {card.rating}
-                      </CardRating>
-                      <CardReview>({card.reviews})</CardReview>
-                    </CardRatingContainer>
                     <CardHoverOverlay
                       variants={{
                         hover: {
@@ -213,13 +224,12 @@ export default ({
                       }}
                       transition={{ duration: 0.3 }}
                     >
-                      <CardButton>Buy Now</CardButton>
+                    <a style={{ display: "table-cell" }} href={card.url} target="_blank"><CardButton>View original</CardButton></a>
                     </CardHoverOverlay>
                   </CardImageContainer>
                   <CardText>
                     <CardTitle>{card.title}</CardTitle>
                     <CardContent>{card.content}</CardContent>
-                    <CardPrice>{card.price}</CardPrice>
                   </CardText>
                 </Card>
               </CardContainer>

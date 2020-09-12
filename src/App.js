@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import HomePage from './pages/HomePage';
+import Sketchnotes from './pages/Sketchnotes';
 import "tailwindcss/dist/base.css";
 import "styles/globalStyles.css";
 import './App.css';
@@ -16,8 +17,11 @@ function App() {
         <Route path="/components/:type/:name">
           <div>Hello</div>
         </Route>
-        <Route path="/">
+        <Route path="/" exact>
           <HomePage />
+        </Route>
+        <Route path="/sketchnotes">
+          <Sketchnotes />
         </Route>
       </Switch>
     </Router>

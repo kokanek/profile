@@ -37,28 +37,6 @@ export default () => {
         watchVideoButtonText="My Youtube Channel"
         watchVideoYoutubeUrl="https://www.youtube.com/embed/bPPHjJOyx1Y" // https://www.youtube.com/watch?v=bPPHjJOyx1Y
       />
-      <MainFeature
-        subheading={<Subheading>Giving back to the community</Subheading>}
-        heading={
-          <>
-            Been a content creator for the
-            <wbr /> <HighlightedText>last 3 years.</HighlightedText>
-          </>
-        }
-        description={
-          <Description>
-            In addition to creating <strong>tech videos</strong>, I also create <strong>blog posts</strong> on dev.to as well as <strong>technical #sketchnotes</strong> on twitter.
-          </Description>
-        }
-        buttonRounded={false}
-        textOnLeft={false}
-        primaryButtonText="Let's connect"
-        primaryButtonUrl="https://www.linkedin.com/in/%F0%9F%91%A4kapeel-kokane-30b81973/"
-        imageSrc={codingImage}
-        imageCss={imageCss}
-        imageDecoratorBlob={true}
-        imageDecoratorBlobCss={tw`left-1/2 -translate-x-1/2 md:w-32 md:h-32 opacity-25`}
-      />
       <Features
         heading={
           <>
@@ -89,15 +67,35 @@ export default () => {
         imageContainerCss={tw`p-2!`}
         imageCss={tw`w-20! h-20!`}
       />
-      {/* TabGrid Component also accepts a tabs prop to customize the tabs and its content directly. Please open the TabGrid component file to see the structure of the tabs props.*/}
-      {/* <TabGrid
+      <MainFeature
+        subheading={<Subheading>Giving back to the community</Subheading>}
         heading={
           <>
-            Checkout our <HighlightedText>menu.</HighlightedText>
+            Been a content creator for the
+            <wbr /> <HighlightedText>last 3 years.</HighlightedText>
           </>
         }
+        description={
+          <Description>
+            In addition to creating <strong>tech videos</strong>, I also create <strong>blog posts</strong> on dev.to as well as <strong>technical #sketchnotes</strong> on twitter.
+          </Description>
+        }
+        buttonRounded={false}
+        textOnLeft={false}
+        primaryButtonText="Let's connect"
+        primaryButtonUrl="https://www.linkedin.com/in/%F0%9F%91%A4kapeel-kokane-30b81973/"
+        imageSrc={codingImage}
+        imageCss={imageCss}
+        imageDecoratorBlob={true}
+        imageDecoratorBlobCss={tw`left-1/2 -translate-x-1/2 md:w-32 md:h-32 opacity-25`}
       />
-      <MainFeature2
+      
+      {/* <blockquote class="twitter-tweet">
+        <p lang="en" dir="ltr"><a href="https://t.co/Tc8pt6MIRy">pic.twitter.com/Tc8pt6MIRy</a></p>&mdash; Comscience Simplified (@Kokaneka) <a
+          href="https://twitter.com/Kokaneka/status/1304755202663182336?ref_src=twsrc%5Etfw"></a>
+      </blockquote> */}
+      {/* TabGrid Component also accepts a tabs prop to customize the tabs and its content directly. Please open the TabGrid component file to see the structure of the tabs props.*/}
+      {/* <MainFeature2
         subheading={<Subheading>A Reputed Brand</Subheading>}
         heading={<>Why <HighlightedText>Choose Us ?</HighlightedText></>}
         statistics={[
@@ -123,8 +121,8 @@ export default () => {
         imageDecoratorBlob={true}
         imageDecoratorBlobCss={tw`left-1/2 md:w-32 md:h-32 -translate-x-1/2 opacity-25`}
         textOnLeft={true}
-      />
-      <Testimonial
+      /> */}
+      {/*<Testimonial
         subheading=""
         heading={<>Customers <HighlightedText>Love Us.</HighlightedText></>}
       />
